@@ -1,5 +1,6 @@
 package janelas.paineis;
 
+import janelas.JanelaPadrao;
 import janelas.TextFieldPadrao;
 
 import javax.swing.*;
@@ -11,12 +12,17 @@ public class Painel_C_Usuario extends PainelPadrao {
     TextFieldPadrao anoDeNascimento;
     TextFieldPadrao CPF;
     JButton botao;
+
     public Painel_C_Usuario(){
         // inicialização das caixas de texto
         nome = new TextFieldPadrao("Nome");
-        ultimoNome = new TextFieldPadrao("Ultimo Nome");
-        anoDeNascimento = new TextFieldPadrao("Ano de Nascimento");
-        CPF = new TextFieldPadrao("CPF");
+
+        ultimoNome = new TextFieldPadrao("Ultimo Nome",Pwidth,Pheight);
+
+        anoDeNascimento = new TextFieldPadrao("Ano De Nascimento",Pwidth,Pheight);
+        anoDeNascimento.AlinharAbaixo(ultimoNome);
+        CPF = new TextFieldPadrao("CPF",Pwidth,Pheight);
+        CPF.AlinharAbaixo(anoDeNascimento);
 
         // Inicializando o Botão
         botao = new JButton();
@@ -28,8 +34,10 @@ public class Painel_C_Usuario extends PainelPadrao {
         this.add(CPF);
         this.add(botao);
 
-        // Definindo suas posições
+        // Centralizando painel
 
+        // Definindo suas posições
+           // nome.CentralizarNoContainer(Pwidth,Pheight);
 
 
     }
