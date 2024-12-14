@@ -1,9 +1,9 @@
 package main;
 
-import janelas.Janela_Cadastro;
+import janelas.JanelaPrincipal;
 
 public class Main {
     public static void main(String[] args) {
-        new Janela_Cadastro();
+        new JanelaPrincipal();
     }
 }
