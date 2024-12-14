@@ -14,4 +14,6 @@ public interface Constantes {
     public static final Dimension JanelaDimensao = new Dimension(1080,720);
     public static final Dimension Labeldimension = new Dimension(300,50);
     public static final Font Lfont = new Font("Serif", Font.BOLD, 25);
+    public static final Font radioFont = new Font("Serif", Font.BOLD, 20);
+    public static final Dimension linkDimension = new Dimension(150,50);
 }

@@ -10,15 +10,15 @@ public class Links {
     public JLabel linkLogin;
 
     public Links(){
-        linkCadastro = new JLabel("<html>Ir para a Tela Secundária</html>");
+        linkCadastro = new JLabel("NAO TENHO CONTA");
         linkCadastro.setForeground(Color.BLUE);
-        linkCadastro.setSize(Constantes.Labeldimension);
+        linkCadastro.setSize(Constantes.linkDimension);
         linkCadastro.setLocation(410,400);
 
-        linkLogin = new JLabel("<html>Ir para a Tela Secundária</html>");
+        linkLogin = new JLabel("JA TENHO CONTA");
         linkLogin.setForeground(Color.BLUE);
-        linkLogin.setSize(Constantes.Labeldimension);
-        linkLogin.setLocation(410,400);
+        linkLogin.setSize(Constantes.linkDimension);
+        linkLogin.setLocation(390,620);
 
 
     }
